@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-image: linear-gradient(120deg,rgba(0,0,0,.3),rgba(0,0,0,.2),rgba(0,0,0,.1),rgba(0,0,0,0));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+}
+h2 {
+  background-color: rgb(105, 100, 100);
+  width: 30%;
+  text-align: center;
+  padding: 0.5rem 0;
+  text-shadow: 1px 3px black;
+  border-radius: 5px;
+  color: white;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(74, 18, 128);
+  text-shadow: 1px 3px black;
+}
+.content {
+  display: flex;
+  margin: 0.3rem;
+  flex-direction: column;
+  overflow-x: auto;
+}
+.form {
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  color: black;
+}
+.row input {
+  width: 60%;
+  margin: 0.1rem 0;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 0.25rem 1rem;
+  
+}
+.row input:focus {
+  outline: none;
+}
+.submit {
+  text-align: right;
+  width: 100px;
+}
+.submit input,
+.submit a {
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  width: 200px;
+  background-color: white;
+  color: gray;
+  border: none;
+  margin: 0.1rem 0;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.submit input:hover,
+.submit a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.document {
+  background-color: rgb(212, 204, 212);
+  margin: 0.1rem auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: larger;
+  color: black;
+
+  border-radius: 10px;
+}
+
+.document:hover,
+.document:hover a {
+  background-color: rgb(117, 95, 90);
+  color: rgb(236, 231, 231);
+}
+.document h5 a {
+  color: black;
+  cursor: pointer;
+}
+h5 {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+a.add {
+  color: black;
+  margin: 0 3rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.login {
+  width: 30%;
+  min-height: 30vh;
+  background-color: rgb(74, 18, 128);
+  border-radius: 3px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+.login form {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.login form input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.login form input[type="submit"] {
+  margin: 1rem 0;
+  width: 95%;
+  cursor: pointer;
+  align-self: center;
+}
+.login form input[type="submit"]:hover {
+  background-color: rgb(119, 71, 163);
+  color: white;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 55%;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.sign-up a {
+  color: rgb(119, 71, 163);
+}
+.sign-up a:hover {
+  background-color: rgb(119, 71, 163);
+  color: white;
+  width: fit-content;
+}
+.errmsg{
+  color: red;
+  font-size: .5rem;
+background-color: #ffff99;
+  right: 0;
+}

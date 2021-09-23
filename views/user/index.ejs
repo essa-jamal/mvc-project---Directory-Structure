@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/client/user/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8da387c6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>Users home page</h2>
+    <div class="users">
+      <div class="header">
+        <h3>#</h3>
+        <h3>name</h3>
+        <h3>age</h3>
+        <h3>nationality</h3>
+        <h3>password</h3>
+        <h3>Action</h3>
+      </div>
+      <% let i=0; users.forEach(user=>{ %>
+        
+      <div class="content">
+        <div class="document">
+        <h5><%= ++i %></h5>
+        <h5 class="name"><%= user.name %></h5>
+        <h5><%= user.age %></h5>
+        <h5><%= user.nationality %></h5>
+        <h5>password</h5>
+        <h5>
+          <a onclick="update(this)" name='update' data-doc=<%= user._id %>><i class="fas fa-edit"></i></a>
+          <a onclick="update(this)" name='delete' data-doc=<%= user._id %>><i class="fas fa-trash"></i></a>
+        </h5>
+      </div>
+      <div class="form">
+       
+      </div>
+      </div>
+      <% }); %>
+      <a  class="add" id='add' name='add' ><i class="fas fa-user-plus"></i>add new user <span class='errmsg'></span> </a>
+      <div id="ad"></div>
+    </div>
+    <script src="/client/user/script.js" defer></script>
+  </body>
+</html>

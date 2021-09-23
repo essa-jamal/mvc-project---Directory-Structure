@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/client/user/style2.css">
+  </head>
+  <body>
+    <div class="signup">
+      <form action="/users/signup" method="POST">
+        <label for="email">Email</label><input type="text" name='name' required placeholder="email" />
+        <label for="age">Age</label><input type="number" min="15" max="50" name='age' required placeholder="age" />
+        <label for="nationality">Nationality</label><input type="text" name='nationality' required placeholder="nationality" />
+        <label for="password">Password</label><input type="password" name='password' required placeholder="password" />
+      <input type="submit" value="Submit">
+      <div class="login"><a href="/users/login" >login</a> if you have user</div>  
+      
+    <% if(message){ %>
+     <div class="message"> <label><%= message %></label><label> Login or choose another user</label></div>
+      <% } %>
+    </form>
+      
+    </div>
+  </body>
+</html>

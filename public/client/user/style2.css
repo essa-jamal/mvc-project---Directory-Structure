@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+body{
+    display: flex;
+    font-family: "Noto Sans", sans-serif;
+    justify-content: center;
+    min-height: 80vh;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+     background-image: linear-gradient(60deg,rgba(0,0,0,.3),rgba(0,0,0,.2),rgba(0,0,0,.1),rgba(0,0,0,0));
+min-width: 100vw;
+min-height: 100vh;    }
+.signup{
+    display: flex;
+    width: 30%;
+    min-height: 50vh;
+    color: white;
+    background-color: rgb(74, 18, 128);
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+border-radius: 3px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+margin: 1rem;
+width: 100%;
+}
+form label{
+    font-size: 1.5rem;
+   
+}
+form input{
+    margin-bottom: .3rem;  
+    padding: .5rem 1rem;
+    width: 80%;
+    border-radius: 3px;
+    font-size: .8rem;
+    color: gray;
+    font-weight: 300;
+}
+form input:focus{
+    outline: none;
+}
+form input[type='Submit']{
+    margin-top: 1rem;
+    color: rgb(158, 130, 130);
+    cursor: pointer;
+    background-color: white;
+    width: 10rem;
+font-size: 1rem;
+
+}
+form input[type='Submit']:hover{
+    background-color: rgb(119, 71, 163);
+    color: white;
+
+}
+
+.login {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50%;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.login a{
+    
+    color: rgb(119, 71, 163);
+}
+.login a:hover{
+    background-color: rgb(119, 71, 163);
+    color: white;
+    width: fit-content;
+}
+.message{
+    margin-top: -1rem;
+    margin-left: 50%;
+}
+.message label{
+    display: block;
+    font-size: .7rem;
+    color: tomato;
+}
